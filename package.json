@@ -1,0 +1,36 @@
+{
+  "name": "plugin-cryptoscore",
+  "description": "CryptoScore plugin for ElizaOS - provides token gauges and fundamental analysis",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "dependencies": {
+    "@elizaos/core": "^1.0.0",
+    "fix-dts-default-cjs-exports": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.0",
+    "tsup": "8.5.0",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist .turbo node_modules tsconfig.tsbuildinfo"
+  }
+}
