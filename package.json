@@ -1,7 +1,7 @@
 {
   "name": "@standujar/plugin-cryptoscore",
   "description": "CryptoScore plugin for ElizaOS - provides token gauges and fundamental analysis",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -52,13 +52,15 @@
     "pluginParameters": {
       "CRYPTOSCORE_API_KEY": {
         "type": "string",
-        "description": "CryptoScore API key for accessing token gauges and analysis"
+        "description": "CryptoScore API key for accessing token gauges and analysis",
+        "sensitive": true,
+        "required": true
       },
       "CRYPTOSCORE_API_URL": {
         "type": "string",
         "description": "CryptoScore API base URL",
-        "default": "https://api.lesscoresdechantal.com",
-        "optional": true
+        "sensitive": false,
+        "required": true
       }
     }
   }
