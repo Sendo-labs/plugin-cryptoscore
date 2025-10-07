@@ -7,6 +7,9 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sendo-labs/plugin-cryptoscore.git"
