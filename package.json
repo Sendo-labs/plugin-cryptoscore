@@ -1,5 +1,5 @@
 {
-  "name": "plugin-cryptoscore",
+  "name": "@standujar/plugin-cryptoscore",
   "description": "CryptoScore plugin for ElizaOS - provides token gauges and fundamental analysis",
   "version": "0.1.0",
   "type": "module",
@@ -7,6 +7,10 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sendo-labs/plugin-cryptoscore.git"
+  },
   "files": [
     "dist"
   ],
@@ -20,17 +24,42 @@
     }
   },
   "dependencies": {
-    "@elizaos/core": "^1.0.0",
+    "@elizaos/core": "^1.6.1",
     "fix-dts-default-cjs-exports": "^1.0.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.2.5",
+    "@elizaos/cli": "^1.6.1",
     "@types/node": "^24.7.0",
+    "prettier": "3.5.3",
     "tsup": "8.5.0",
-    "typescript": "^5.9.3"
+    "typescript": "5.9.3"
   },
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "clean": "rm -rf dist .turbo node_modules tsconfig.tsbuildinfo"
+    "clean": "rm -rf dist .turbo node_modules tsconfig.tsbuildinfo",
+    "lint": "biome lint --write .",
+    "format": "biome format --write .",
+    "format:check": "prettier --check ./src",
+    "check": "biome check --write .",
+    "test": "elizaos test",
+    "publish": "elizaos plugin publish"
+  },
+  "platform": "universal",
+  "agentConfig": {
+    "pluginType": "elizaos:plugin:1.0.0",
+    "pluginParameters": {
+      "CRYPTOSCORE_API_KEY": {
+        "type": "string",
+        "description": "CryptoScore API key for accessing token gauges and analysis"
+      },
+      "CRYPTOSCORE_API_URL": {
+        "type": "string",
+        "description": "CryptoScore API base URL",
+        "default": "https://api.lesscoresdechantal.com",
+        "optional": true
+      }
+    }
   }
 }
