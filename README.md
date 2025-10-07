@@ -1,4 +1,4 @@
-# @elizaos/plugin-cryptoscore
+# Plugin Cryptoscore
 
 CryptoScore integration plugin for ElizaOS that provides cryptocurrency token analysis with comprehensive gauge metrics and fundamental scoring.
 
@@ -13,7 +13,7 @@ CryptoScore integration plugin for ElizaOS that provides cryptocurrency token an
 ## Installation
 
 ```bash
-bun install @elizaos/plugin-cryptoscore
+bun install @standujar/plugin-cryptoscore
 ```
 
 ## Configuration
@@ -30,7 +30,7 @@ CRYPTOSCORE_API_URL=https://api.xxxxxxxxx.com
 ### Adding to ElizaOS Agent
 
 ```typescript
-import { cryptoScorePlugin } from '@elizaos/plugin-cryptoscore';
+import { cryptoScorePlugin } from '@standujar/plugin-cryptoscore';
 
 // Add to your agent configuration
 const agent = {
