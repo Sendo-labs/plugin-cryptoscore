@@ -3,10 +3,8 @@ name: Auto Release
 on:
   push:
     branches:
-      - main  # ou master
-  workflow_dispatch: {}
-    
-  
+      - main  # ou master 
+      - feat/workflows
 
 jobs:
   release:
