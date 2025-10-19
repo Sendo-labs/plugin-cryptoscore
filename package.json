@@ -46,8 +46,7 @@
     "format": "biome format --write .",
     "format:check": "prettier --check ./src",
     "check": "biome check --write .",
-    "test": "elizaos test",
-    "publish": "elizaos plugin publish"
+    "test": "elizaos test"
   },
   "platform": "universal",
   "agentConfig": {
