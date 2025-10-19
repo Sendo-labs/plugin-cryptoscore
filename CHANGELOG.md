@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/Sendo-labs/plugin-cryptoscore/compare/v1.1.1...v1.1.2) (2025-10-19)
+
+
+### Bug Fixes
+
+* **package:** update plugin scope to [@sendo-labs](https://github.com/sendo-labs) ([caf5eca](https://github.com/Sendo-labs/plugin-cryptoscore/commit/caf5ecaedd07ce1b813d4d95e8ca561f3026b24e))
+
 ## [1.1.1](https://github.com/Sendo-labs/plugin-cryptoscore/compare/v1.1.0...v1.1.1) (2025-10-19)
 
 
