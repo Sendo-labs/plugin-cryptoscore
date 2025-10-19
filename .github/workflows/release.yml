@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main  # ou master 
-      - feat/workflows
 
 jobs:
   release:
