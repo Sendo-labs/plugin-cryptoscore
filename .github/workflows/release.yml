@@ -8,7 +8,7 @@ on:
 
 jobs:
   release:
-    uses: sendo/reusable-workflows/.github/workflows/release.yml@feat/wip
+    uses: sendo/reusable-workflows/.github/workflows/release.yml@v1
     with:
       release-type: node
     permissions:
