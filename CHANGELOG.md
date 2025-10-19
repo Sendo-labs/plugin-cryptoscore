@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/Sendo-labs/plugin-cryptoscore/compare/v1.1.0...v1.1.1) (2025-10-19)
+
+
+### Bug Fixes
+
+* **workflows:** update NPM publishing trigger to pull request merges ([d635dcd](https://github.com/Sendo-labs/plugin-cryptoscore/commit/d635dcd87024fc5d97d916d8b8a8b77a83b973bd))
+
 ## [1.1.0](https://github.com/Sendo-labs/plugin-cryptoscore/compare/v1.0.0...v1.1.0) (2025-10-19)
 
 
