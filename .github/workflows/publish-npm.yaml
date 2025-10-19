@@ -1,12 +1,14 @@
 name: Publish to NPM
 
 on:
-  push:
-    tags:
-      - 'v*'
+  pull_request:
+    types: [closed]
+    branches:
+      - main
 
 jobs:
   publish:
+    if: github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'release-please--')
     uses: sendo-labs/reusable-workflows/.github/workflows/npm-publish.yml@npm-publish-workflow-v1.0.0
     with:
       bun-version: 'latest'
