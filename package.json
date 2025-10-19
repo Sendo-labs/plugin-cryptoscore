@@ -1,7 +1,7 @@
 {
   "name": "@sendo/plugin-cryptoscore",
   "description": "CryptoScore plugin for ElizaOS - provides token gauges and fundamental analysis",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
