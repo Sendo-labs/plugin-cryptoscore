@@ -1,5 +1,5 @@
 {
-  "name": "@standujar/plugin-cryptoscore",
+  "name": "@sendo/plugin-cryptoscore",
   "description": "CryptoScore plugin for ElizaOS - provides token gauges and fundamental analysis",
   "version": "1.0.0",
   "type": "module",
