@@ -8,7 +8,7 @@ on:
 
 jobs:
   release:
-    uses: sendo-labs/reusable-workflows/.github/workflows/release.yml@v1
+    uses: sendo-labs/reusable-workflows/.github/workflows/release.yml@v1.0.0
     with:
       release-type: node
     permissions:
