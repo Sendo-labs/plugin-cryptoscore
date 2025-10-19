@@ -1,0 +1,19 @@
+name: Publish to NPM
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    uses: sendo/reusable-workflows/.github/workflows/npm-publish.yml@feat/wip
+    with:
+      bun-version: 'latest'
+      node-version: '22'
+      working-directory: '.'
+      registry-url: 'https://registry.npmjs.org'
+      skip-tests: false
+      skip-build: false
+      access: 'public'
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

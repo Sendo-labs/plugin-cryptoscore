@@ -1,0 +1,13 @@
+name: Auto Release
+
+on:
+  push:
+    branches:
+      - main  # ou master
+
+jobs:
+  release:
+    uses: sendo/reusable-workflows/.github/workflows/release.yml@feat/wip
+    permissions:
+      contents: write
+      pull-requests: write
