@@ -4,10 +4,15 @@ on:
   push:
     branches:
       - main  # ou master
+  workflow_dispatch: {}
+    
+  
 
 jobs:
   release:
     uses: sendo/reusable-workflows/.github/workflows/release.yml@feat/wip
+    with:
+      release-type: node
     permissions:
       contents: write
       pull-requests: write
