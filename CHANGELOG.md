@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/Sendo-labs/plugin-cryptoscore/compare/v1.0.0...v1.1.0) (2025-10-19)
+
+
+### Features
+
+* **workflows:** update reusable workflow references for NPM publishing and release ([24f5428](https://github.com/Sendo-labs/plugin-cryptoscore/commit/24f542878b17479018d3225d0fb01d9442633a8a))
+
 ## 1.0.0 (2025-10-19)
 
 
