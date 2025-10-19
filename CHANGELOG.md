@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/Sendo-labs/plugin-cryptoscore/compare/v1.1.2...v1.1.3) (2025-10-19)
+
+
+### Bug Fixes
+
+* **package:** remove unused publish script from package.json ([d826622](https://github.com/Sendo-labs/plugin-cryptoscore/commit/d8266222dce35f123d4664347398d7a92a6089de))
+
 ## [1.1.2](https://github.com/Sendo-labs/plugin-cryptoscore/compare/v1.1.1...v1.1.2) (2025-10-19)
 
 
