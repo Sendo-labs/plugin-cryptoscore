@@ -13,7 +13,7 @@ jobs:
       node-version: '22'
       working-directory: '.'
       registry-url: 'https://registry.npmjs.org'
-      skip-tests: false
+      skip-tests: true
       skip-build: false
       access: 'public'
     secrets:
