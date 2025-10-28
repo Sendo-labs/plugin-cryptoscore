@@ -20,16 +20,10 @@ export const cryptoScorePlugin: Plugin = {
   evaluators: [],
   services: [CryptoScoreService],
 
-  init: async (config: Record<string, string>): Promise<void> => {
+  init: async (_config: Record<string, string>): Promise<void> => {
     logger.info('Initializing CryptoScore plugin');
-
-    // Validate API key is present
-    const apiKey = config.CRYPTOSCORE_API_KEY || process.env.CRYPTOSCORE_API_KEY;
-    if (!apiKey) {
-      logger.warn('CRYPTOSCORE_API_KEY not provided - CryptoScore functionality will be unavailable');
-      return;
-    }
-
+    // Note: API key validation is done in the Service constructor via runtime.getSetting()
+    // The init function doesn't have access to character secrets, only process.env
     logger.info('CryptoScore plugin initialized successfully');
   },
 };
